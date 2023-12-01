@@ -1,5 +1,8 @@
 package Buildings;
 
+import Managers.RessourcesManager;
+import Ressources.RessourcesName;
+
 public class Quarry extends Building{
 
     Quarry(){
@@ -18,4 +21,17 @@ public class Quarry extends Building{
     {
 
     }
+    public static boolean CONDITION()
+    {
+        if(RessourcesManager.getInstance().getResource(RessourcesName.WOOD).getQuantity() >= 50
+        && RessourcesManager.getInstance().getResource(RessourcesName.GOLD).getQuantity() >= 4)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 }
