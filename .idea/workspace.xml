@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bd058ffb-80d7-4826-8ca7-9d202f8bfb3c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/PROJET-OBJET.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Ressources/Cement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Ressources/Coal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Ressources/Food.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Ressources/Gold.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Ressources/Iron.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Ressources/Lumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Ressources/Ressources.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Ressources/RessourcesName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Ressources/Steel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Ressources/Stone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Ressources/Tools.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/Ressources/Wood.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AOE/RessourcesManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/Appartment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/Building.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/BuildingNames.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/CementPlant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/Farm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/Habitant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/House.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/Humain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/HumanNames.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/LumberMill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/Population.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/PopulationBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/Quarry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/SteelMill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/ToolFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/Travailleur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buildings/WoodenCabin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Managers/BuildingsManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Managers/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Managers/RessourcesManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PROJET-OBJET.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Cement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Coal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Food.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Gold.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Iron.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Lumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Ressources.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/RessourcesName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Steel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Stone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Tools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Wood.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Z3LhFubg1VWCCAePvHw9j7DTvs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Coding/PROJET-OBJET",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="PROJET-OBJET" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd058ffb-80d7-4826-8ca7-9d202f8bfb3c" name="Changes" comment="" />
+      <created>1701645933718</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701645933718</updated>
+      <workItem from="1701645934718" duration="194000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
