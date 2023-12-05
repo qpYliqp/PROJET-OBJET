@@ -3,24 +3,49 @@ package Managers;
 import java.awt.*;
 import javax.swing.*;
 import java.util.Map;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import Display.Board;
 import Ressources.Ressources;
+import Display.Case;
 
 public class DisplayManager extends JFrame {
     Board grille = new Board(10, 5);
+    //List<JPanel> windows = new ArrayList<JPanel>();
 
-    public DisplayManager() {
+    private static DisplayManager instance;  // Instance unique de la classe
+    private Case current;
+    private JPanel test = null;
+
+        public static DisplayManager getInstance() {
+        if (instance == null) {
+            instance = new DisplayManager();
+        }
+        return instance;
+    }
+
+    private DisplayManager() {
+
+
+        SwingUtilities.invokeLater(() -> Init());
+    }
+
+    private void Init()
+    {
+        current = null;
         setTitle("Age of Empire ( version nulle )");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
-        setSize(1200, 1000);
         add(ressources(), BorderLayout.NORTH);
         add(grid(), BorderLayout.CENTER);
 
         // Rendre la fenêtre visible
         setLocationRelativeTo(null);
         setVisible(true);
+        // Maximiser la fenêtre
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+
     }
 
     private JPanel ressources() {
@@ -57,14 +82,64 @@ public class DisplayManager extends JFrame {
     }
 
     private JPanel grid() {
+
         JPanel gridPanel = new JPanel(new GridLayout(5, 10));
         for (int i = 0; i < grille.Ysize(); i++) {
             for (int j = 0; j < grille.Xsize(); j++) {
                 gridPanel.add(grille.getCase(i, j));
+                grille.getCase(i,j).addActionListener(new CaseClickListener(i,j));
             }
         }
 
         return gridPanel;
+    }
+
+    private class CaseClickListener implements ActionListener {
+        private int ligne;
+        private int colonne;
+
+        public CaseClickListener(int ligne, int colonne) {
+            this.ligne = ligne;
+            this.colonne = colonne;
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (current != null) 
+            {
+                //DisplayManager.test();                
+                if (ligne == current.getPosition().getX() && colonne == current.getPosition().getY()) {
+                    current.setBackground(Color.GREEN);
+                    current = null;
+                } else {
+                    current.setBackground(Color.GREEN);
+                    current = grille.getCase(ligne, colonne);
+                    current.setBackground(Color.WHITE);
+                }
+            } else if (current == null) {
+                //DisplayManager.remove();
+                current = grille.getCase(ligne, colonne);
+                current.setBackground(Color.WHITE);
+            }
+
+        }
+    }
+
+    public void test()
+    {
+        test = ressources();
+        add(test,BorderLayout.SOUTH);
+        
+    }
+
+    public void remove()
+    {
+        if(test != null)
+        {
+            remove(test);
+            revalidate();
+            repaint();
+        }
     }
 
 }

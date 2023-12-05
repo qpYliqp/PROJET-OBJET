@@ -5,10 +5,12 @@ import Ressources.RessourcesName;
 public class Manager {
     public RessourcesManager ressourcesManager;
     public BuildingsManager buildingsManager;
+    public DisplayManager displayManager;
     public Manager()
     {
         ressourcesManager = RessourcesManager.getInstance();
         buildingsManager = BuildingsManager.getInstance();
+        displayManager = DisplayManager.getInstance();
     }
 
     public void Start()

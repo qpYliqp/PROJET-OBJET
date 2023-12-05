@@ -10,6 +10,6 @@ public class Main {
         Manager manager = new Manager();
 
         manager.Start();
-        SwingUtilities.invokeLater(() -> new DisplayManager());
+        
     }
 }
