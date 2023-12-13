@@ -8,6 +8,7 @@ public class WoodenCabin extends Building{
         {
             this.name = BuildingNames.WOODEN_CABIN;
             this.population = PopulationBuilder.build(7,2,2);
+            this.setConstructionTime(2);
             this.setBuilt(false);
         }
 
@@ -24,7 +25,7 @@ public class WoodenCabin extends Building{
 
         }
 
-        public static boolean CONDITION()
+        public boolean CONDITION()
         {
             if(RessourcesManager.getInstance().getResource(RessourcesName.WOOD).getQuantity() >= 1
             && RessourcesManager.getInstance().getResource(RessourcesName.GOLD).getQuantity() >= 1)
@@ -36,4 +37,17 @@ public class WoodenCabin extends Building{
                 return false;
             }
         }
+
+        @Override
+        public String PrintCondition()
+        {
+            return "(1 bois, 1 or)";
+        }
+
+    @Override
+    public void ConstructionRessource()
+    {
+        RessourcesManager.getInstance().getResource(RessourcesName.WOOD).removeQuantity(1);
+        RessourcesManager.getInstance().getResource(RessourcesName.GOLD).removeQuantity(1);
+    }
 }

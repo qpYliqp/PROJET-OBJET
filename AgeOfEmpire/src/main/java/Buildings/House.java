@@ -8,6 +8,7 @@ public class House extends Building{
     {
         this.name = BuildingNames.HOUSE;
         this.population = PopulationBuilder.build(7,2,2);
+        this.setConstructionTime(4);
         this.setBuilt(false);
     }
 
@@ -17,7 +18,7 @@ public class House extends Building{
 
     }
 
-    public static boolean CONDITION()
+    public boolean CONDITION()
     {
         if(RessourcesManager.getInstance().getResource(RessourcesName.WOOD).getQuantity() >= 2
         && RessourcesManager.getInstance().getResource(RessourcesName.STONE).getQuantity() >= 2
@@ -27,6 +28,7 @@ public class House extends Building{
         }
         else
         {
+            System.out.println("Vous n'avez pas assez de ressources pour construire une maison");
             return false;
         }
     }
@@ -34,5 +36,19 @@ public class House extends Building{
     public void Consumption()
     {
 
+    }
+
+    @Override
+    public String PrintCondition()
+    {
+        return "(2 bois, 2 pierre, 1 or)";
+    }
+
+    @Override
+    public void ConstructionRessource()
+    {
+        RessourcesManager.getInstance().getResource(RessourcesName.WOOD).removeQuantity(2);
+        RessourcesManager.getInstance().getResource(RessourcesName.STONE).removeQuantity(2);
+        RessourcesManager.getInstance().getResource(RessourcesName.GOLD).removeQuantity(1);
     }
 }

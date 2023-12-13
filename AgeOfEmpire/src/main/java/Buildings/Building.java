@@ -3,9 +3,9 @@ package Buildings;
 public abstract class Building {
 
     protected Population population;
-    private boolean isBuilt;
+    private boolean isBuilt =false;
 
-    private int ConstructionTime;
+    protected int ConstructionTime;
 
     String name;
 
@@ -41,6 +41,12 @@ public abstract class Building {
     public abstract void Production();
 
     public abstract void Consumption();
+
+    public abstract boolean CONDITION();
+
+    public abstract String PrintCondition();
+
+    public abstract void ConstructionRessource();
 
 
 

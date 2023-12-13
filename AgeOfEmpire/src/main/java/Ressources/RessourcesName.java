@@ -11,7 +11,4 @@ public class RessourcesName {
     public static final String TOOLS = "Tools";
     public static final String CEMENT = "Cement";
     public static final String STEEL = "Steel";
-
-
-
 }

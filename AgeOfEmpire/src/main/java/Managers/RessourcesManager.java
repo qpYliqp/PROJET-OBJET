@@ -47,10 +47,4 @@ public class RessourcesManager {
         return this.resourcesMap;
     }
 
-    public void printRessources() {
-        for (Map.Entry<String, Ressources> entry : resourcesMap.entrySet()) {
-            System.out.println(entry.getKey() + " : " + entry.getValue().getQuantity());
-        }
-    }
-
 }
